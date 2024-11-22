@@ -1,0 +1,136 @@
+/* Base styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #e4e4e4; /* Light text color for readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of the viewport */
+    margin: 0;
+}
+
+.content-wrapper {
+    flex: 1; /* Takes up remaining space */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo {
+    max-width: 120px; /* Adjusted to make the logo visually appealing */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Button styles */
+button.btn {
+    background: linear-gradient(45deg, #4CAF50, #66BB6A);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin: 20px 0;
+}
+
+button.btn:hover {
+    background: linear-gradient(45deg, #66BB6A, #4CAF50);
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Scheduled meetings container */
+.scheduled-meetings {
+    background-color: #292929; /* Slightly lighter dark background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    text-align: left;
+}
+
+.scheduled-meetings h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.scheduled-meetings ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.scheduled-meetings li {
+    background-color: #2a2a2a; /* Slightly lighter background for list items */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scheduled-meetings li span {
+    font-size: 1rem;
+    color: #e4e4e4;
+}
+
+.join-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.join-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Footer styling */
+footer {
+    background-color: #262626;
+    color: #b3b3b3;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    border-top: 1px solid #333;
+    position: relative; /* Removed fixed positioning */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Stretches to full width */
+}

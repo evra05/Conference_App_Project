@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferencing App - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <div class="content-wrapper">
+        <header>
+            <img src="{{ url_for('static', filename='logo_uptm.png') }}" alt="Logo" class="logo">
+            <h1>Conferencing App</h1>
+        </header>
+        
+        <main>
+            <button onclick="window.location.href='/schedule'" class="btn">Schedule Meeting</button>
+            <section class="scheduled-meetings">
+                <h2>Scheduled Meetings</h2>
+                <ul>
+                    {% if meetings %}
+                        {% for meeting in meetings %}
+                        <li>
+                            <span>{{ meeting['title'] }} - {{ meeting['room_name'] }} - {{ meeting['date'] }} - {{ meeting['time'] }}</span>
+                            <a href="{{ meeting['link'] }}" target="_blank">
+                                <button class="join-button">Join Now</button>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    {% else %}
+                        <li>No meetings scheduled yet.</li>
+                    {% endif %}
+                </ul>
+            </section>
+        </main>
+    </div>
+    
+    <footer>
+        <p>Created by Evra Salvateara</p>
+    </footer>
+</body>
+
+</html>

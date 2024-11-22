@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Room</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='meeting.css') }}">
+</head>
+</head>
+<body>
+    <div id="meet"></div>
+
+    <script src="https://meet.jit.si/external_api.js"></script>
+    <script>
+        const domain = "meet.jit.si";
+        const options = {
+            roomName: "{{ room_name }}",  // Use the room name from the URL parameter
+            width: "100%",
+            height: "100%",
+            parentNode: document.querySelector('#meet')
+        };
+        const api = new JitsiMeetExternalAPI(domain, options);
+    </script>
+</body>
+</html>

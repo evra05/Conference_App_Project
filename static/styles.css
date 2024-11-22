@@ -1,0 +1,35 @@
+html, body, #meet {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/* Ensure #meet covers the full viewport */
+#meet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.schedule-form {
+    max-width: 300px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

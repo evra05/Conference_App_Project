@@ -1,0 +1,122 @@
+/* Basic styling for dark theme */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5rem; /* Set consistent font size for headings */
+}
+
+.form-container, .scheduled-meetings {
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1rem; /* Set uniform font size for both sections */
+}
+
+label {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1rem; /* Consistent font size for labels */
+}
+
+input[type="text"], input[type="date"], input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #ffffff;
+    font-size: 1rem; /* Consistent font size for input fields */
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem; /* Consistent font size for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Divider Line */
+.divider {
+    border: 1px solid #555;
+    margin: 20px 0;
+}
+
+/* Scheduled Meetings List */
+.scheduled-meetings ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.scheduled-meetings li {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #222;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #444;
+    font-size: 1rem; /* Consistent font size for scheduled meeting items */
+}
+
+.scheduled-meetings .edit-button,
+.scheduled-meetings .remove-button {
+    padding: 8px 12px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem; /* Consistent font size for action buttons */
+}
+
+.edit-button {
+    background-color: #ffcc00;
+}
+
+.remove-button {
+    background-color: #ff4d4d;
+}
+
+.edit-button:hover {
+    background-color: #e6b800;
+}
+
+.remove-button:hover {
+    background-color: #d43f3f;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
